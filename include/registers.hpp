@@ -2,10 +2,13 @@
 #define REGISTERS_H
 
 #include "utils.h"
-#include <array>
 
+class Registers {
 
-enum class regIndex : byte{
+public:
+Registers();
+
+enum regIndex : byte{
     R0 = 0x0,
     R1 = 0x1,
     R2 = 0x2,
@@ -24,9 +27,25 @@ enum class regIndex : byte{
     I1 = 0xF 
 };
 
+void writeToRegister(regIndex reg, word value);
+word readFromRegister(regIndex reg);
 
-void writeToRegister(Registers reg, word value) {
-    reg = value;
-} 
+word reg_R0 = 0;
+word reg_R1 = 0;
+word reg_R2 = 0;
+word reg_R3 = 0;
+word reg_R4 = 0;
+word reg_R5 = 0;
+word reg_R6 = 0;
+word reg_R7 = 0;
+word reg_SP = 0;
+word reg_BP = 0;
+word reg_IP = 0;
+word reg_FLAGS = 0;
+word reg_A0 = 0;
+word reg_A1 = 0;
+word reg_I0 = 0;
+word reg_I1 = 0;
+};
 
 #endif  //  REGISTERS_H
