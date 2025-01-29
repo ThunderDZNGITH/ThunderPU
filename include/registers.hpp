@@ -1,7 +1,7 @@
 #ifndef REGISTERS_H
 #define REGISTERS_H
 
-#include "utils.h"
+#include "utils.hpp"
 
 class Registers {
 
@@ -27,8 +27,8 @@ enum regIndex : byte{
     I1 = 0xF 
 };
 
-void writeToRegister(regIndex reg, word value);
-word readFromRegister(regIndex reg);
+static void writeToRegister(regIndex reg, word value);
+static word readFromRegister(regIndex reg);
 
 word reg_R0 = 0;
 word reg_R1 = 0;
