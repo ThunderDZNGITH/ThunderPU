@@ -30,22 +30,22 @@ enum regIndex : byte{
 static void writeToRegister(regIndex reg, word value);
 static word readFromRegister(regIndex reg);
 
-word reg_R0 = 0;
-word reg_R1 = 0;
-word reg_R2 = 0;
-word reg_R3 = 0;
-word reg_R4 = 0;
-word reg_R5 = 0;
-word reg_R6 = 0;
-word reg_R7 = 0;
-word reg_SP = 0;
-word reg_BP = 0;
-word reg_IP = 0;
-word reg_FLAGS = 0;
-word reg_A0 = 0;
-word reg_A1 = 0;
-word reg_I0 = 0;
-word reg_I1 = 0;
+static word reg_R0;
+static word reg_R1;
+static word reg_R2;
+static word reg_R3;
+static word reg_R4;
+static word reg_R5;
+static word reg_R6;
+static word reg_R7;
+static word reg_SP;
+static word reg_BP;
+static word reg_IP;
+static word reg_FLAGS;
+static word reg_A0;
+static word reg_A1;
+static word reg_I0;
+static word reg_I1;
 };
 
 #endif  //  REGISTERS_H

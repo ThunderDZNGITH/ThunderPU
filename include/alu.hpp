@@ -16,12 +16,12 @@ class ALU {
     void Operation_SHL(Registers::regIndex a);
     void Operation_SHR(Registers::regIndex a);
 
-    void Operation_NOT(Registers::regIndex a, Registers::regIndex b);
+    void Operation_NOT(Registers::regIndex a);
     void Operation_MUL(Registers::regIndex a, Registers::regIndex b);
     void Operation_DIV(Registers::regIndex a, Registers::regIndex b);
     void Operation_MOD(Registers::regIndex a, Registers::regIndex b);
-    void Operation_ROR(Registers::regIndex a, Registers::regIndex b);
-    void Operation_ROL(Registers::regIndex a, Registers::regIndex b);
+    void Operation_ROR(Registers::regIndex a);
+    void Operation_ROL(Registers::regIndex a);
 
 };
 

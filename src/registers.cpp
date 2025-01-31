@@ -2,6 +2,23 @@
 
 Registers::Registers() {} 
 
+word Registers::reg_R0 = 0;
+word Registers::reg_R1 = 0;
+word Registers::reg_R2 = 0;
+word Registers::reg_R3 = 0;
+word Registers::reg_R4 = 0;
+word Registers::reg_R5 = 0;
+word Registers::reg_R6 = 0;
+word Registers::reg_R7 = 0;
+word Registers::reg_SP = 0;
+word Registers::reg_BP = 0;
+word Registers::reg_IP = 0;
+word Registers::reg_FLAGS = 0;
+word Registers::reg_A0 = 0;
+word Registers::reg_A1 = 0;
+word Registers::reg_I0 = 0;
+word Registers::reg_I1 = 0;
+
 void Registers::writeToRegister(regIndex reg, word value){
     switch(reg){
         case regIndex::R0:
@@ -107,6 +124,6 @@ word Registers::readFromRegister(regIndex reg){
             return reg_I1;
             break;
         default:
-            break;
+            return 0;
     } 
 } 
